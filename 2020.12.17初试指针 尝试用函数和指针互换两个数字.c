@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<string.h>
-void huhuan_1(int a, int b);
+void huhuan_1(int a, int b);//è¿™ä¸ªå‡½æ•°æ˜¯ä¸ºäº†å®ç°äº¤æ¢aå’Œbçš„å€¼
 
-void huhuan_3(int * p, int * q)//ÆôÊ¾ÊÇ Ö¸Õë²Ù×÷Ö±½Ó×÷ÓÃÓÚÄÚ´æ ²»ÊÜº¯ÊıµÄÕ»½á¹¹Ó°Ïì
+void huhuan_3(int * p, int * q)//å¯ç¤ºæ˜¯ æŒ‡é’ˆæ“ä½œç›´æ¥ä½œç”¨äºå†…å­˜ ä¸å—å‡½æ•°çš„æ ˆç»“æ„å½±å“
 {
-    int  t;//pÊÇint *£¬*pÊÇint
+    int  t;//pæ˜¯int *ï¼Œ*pæ˜¯int
 
     t = *p;
     *p = *q;
@@ -13,19 +13,19 @@ void huhuan_3(int * p, int * q)//ÆôÊ¾ÊÇ Ö¸Õë²Ù×÷Ö±½Ó×÷ÓÃÓÚÄÚ´æ ²»ÊÜº¯ÊıµÄÕ»½á¹¹Ó
     return 0;
 }
 
-int main(void)
+int main(void)//è¿™é‡Œè¯•äº†ä¸‰ä¸ªæ–¹å¼ åˆ†åˆ«çœ‹äº†ä¸¤ç§é”™è¯¯çš„å†™æ³•çš„æŠ¥é”™ ä»¥åŠä¸€ä¸ªæ­£ç¡®å†™æ³•çš„æ„Ÿæ‚Ÿ
 {
     int a = 3;
     int b = 5;
 
-    huhuan_3(&a, &b);//huhuan_2(*p,*q); huhuan_2(a, b)£» ÊÇ´íÎóµÄ
+    huhuan_3(&a, &b);//huhuan_2(*p,*q); huhuan_2(a, b)ï¼› æ˜¯é”™è¯¯çš„
 
     printf("a = %d, b = %d\n", a, b);
 
     return 0;
 }
 /*
-void huhuan_1(int a, int b)//²»ÄÜ½»»»
+void huhuan_1(int a, int b)//ä¸èƒ½äº¤æ¢
 {
     int t;
 
@@ -37,9 +37,9 @@ void huhuan_1(int a, int b)//²»ÄÜ½»»»
 }*/
 
 /*
-void huhuan_2(int * p, int * q)//ÈÔÈ»²»ÄÜÊµÏÖ
+void huhuan_2(int * p, int * q)//ä»ç„¶ä¸èƒ½å®ç°
 {
-    int * t;//Èç¹ûÒª»¥»»pºÍqµÄÖµ£¬t±ØĞëÊÇint * ,²»ÄÜÊÇint
+    int * t;//å¦‚æœè¦äº’æ¢på’Œqçš„å€¼ï¼Œtå¿…é¡»æ˜¯int * ,ä¸èƒ½æ˜¯int
 
     t = p;
     p = q;
