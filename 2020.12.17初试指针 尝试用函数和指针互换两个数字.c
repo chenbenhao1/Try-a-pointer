@@ -25,7 +25,7 @@ int main(void)//这里试了三个方式 分别看了两种错误的写法的报
     return 0;
 }
 /*
-void huhuan_1(int a, int b)//不能交换
+void huhuan_1（int a，int b）//不能交换  mc
 {
     int t;
 
